@@ -13,6 +13,7 @@ export default function Hero({ profile }) {
       <img
         src={profile.photo}
         alt="profile"
+        loading="eager"
         className="w-32 h-32 rounded-full border-4 border-amber-400 mb-6"
       />
 

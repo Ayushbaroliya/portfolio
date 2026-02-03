@@ -16,29 +16,17 @@ export default function Home() {
         e.preventDefault();
         setStatus('Sending...');
 
-        // ================= EMAILJS CONFIGURATION =================
-        // 1. Sign up at https://www.emailjs.com/
-        // 2. Get your Service ID, Template ID, and Public Key
-        // 3. Uncomment, paste your keys, and remove the simulation code below:
-
-        /*
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        // EmailJS Configuration
+        // NOTE: You still need to replace 'YOUR_TEMPLATE_ID' and 'YOUR_PUBLIC_KEY'
+        emailjs.sendForm('service_mr7mvbc', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
             .then((result) => {
                 setStatus('Message Sent! Thank you.');
                 e.target.reset();
             }, (error) => {
-                setStatus('Failed to send. Please try again.');
+                setStatus('Failed to send. Please check console.');
                 console.error(error);
             });
-        */
-        // =========================================================
 
-        // --- REMOVE THIS SIMULATION BLOCK WHEN EMAILJS IS READY ---
-        setTimeout(() => {
-            setStatus('Message Sent! (See Home.jsx to connect real Email)');
-            e.target.reset();
-        }, 1500);
-        // ---------------------------------------------------------
     };
 
     return (

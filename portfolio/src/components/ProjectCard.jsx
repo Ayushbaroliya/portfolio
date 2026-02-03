@@ -13,6 +13,8 @@ export default function ProjectCard({ project }) {
         src={project.img}
         alt={project.title}
         className="w-full h-40 object-cover"
+        loading="lazy"
+        decoding="async"
       />
 
       <div className="p-4">
