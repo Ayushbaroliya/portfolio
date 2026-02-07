@@ -28,7 +28,7 @@ export const profile = {
 };
 
 import { FaReact, FaNodeJs, FaGithub, FaPython, FaBrain, FaMicrochip, FaWifi, FaProjectDiagram, FaJava } from 'react-icons/fa';
-import { SiTailwindcss, SiJavascript, SiCplusplus, SiEspressif, SiArduino } from 'react-icons/si';
+import { SiTailwindcss, SiJavascript, SiCplusplus, SiEspressif, SiArduino, SiMysql, SiMongodb } from 'react-icons/si';
 
 export const skills = [
   { name: "React", icon: FaReact, color: "text-cyan-400" },
@@ -44,7 +44,9 @@ export const skills = [
   { name: "ML", icon: FaBrain, color: "text-pink-500" },
   { name: "Electronics", icon: FaMicrochip, color: "text-orange-300" },
   { name: "DSA", icon: FaProjectDiagram, color: "text-violet-400" },
-  { name: "Java", icon: FaJava, color: "text-red-600" }
+  { name: "Java", icon: FaJava, color: "text-red-600" },
+  { name: "MySQL", icon: SiMysql, color: "text-blue-500" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-green-500" }
 ];
 
 export const projects = [
