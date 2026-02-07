@@ -123,3 +123,46 @@ export const projects = [
 ];
 
 
+const cppCert = new URL('./img/cpp-cert.jpg', import.meta.url).href;
+const dsaCert = new URL('./img/dsa-cert.jpg', import.meta.url).href;
+const iotCert = new URL('./img/iot-cert.jpg', import.meta.url).href;
+const jsCert = new URL('./img/js-cert.jpg', import.meta.url).href;
+const javaCert = new URL('./img/java-cert.jpg', import.meta.url).href;
+
+export const certificates = [
+  {
+    title: "C++ Fundamentals",
+    issuer: "Infosys Springboard",
+    date: "2024",
+    img: cppCert,
+    link: "#"
+  },
+  {
+    title: "DSA with Java",
+    issuer: "Infosys Springboard",
+    date: "2024",
+    img: dsaCert,
+    link: "#"
+  },
+  {
+    title: "IoT & Electronics",
+    issuer: "Infosys Springboard",
+    date: "2023",
+    img: iotCert,
+    link: "#"
+  },
+  {
+    title: "JavaScript Essentials",
+    issuer: "Infosys Springboard",
+    date: "2023",
+    img: jsCert,
+    link: "#"
+  },
+  {
+    title: "Java Programming",
+    issuer: "Infosys Springboard",
+    date: "2023",
+    img: javaCert,
+    link: "#"
+  }
+];

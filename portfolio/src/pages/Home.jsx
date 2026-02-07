@@ -33,20 +33,26 @@ export default function Home() {
         <>
             <Hero profile={profile} />
 
-            {/* Experience Timeline Added */}
-            <Section id="experience" title="Experience">
+            {/* Experience & Education Timeline */}
+            <Section id="experience" title="Education & Experience">
                 <div className="relative border-l border-amber-500/30 ml-3 md:ml-6 space-y-8 pl-6 md:pl-8">
-                    <div className="relative">
-                        <span className="absolute -left-[35px] md:-left-[41px] top-1 h-5 w-5 rounded-full border border-amber-500 bg-black"></span>
-                        <h3 className="text-xl font-bold text-amber-300">B.Tech in Computer Science</h3>
-                        <span className="text-sm text-gray-400">2022 - Present | Medi-Caps University</span>
-                        <p className="mt-2 text-gray-300">Focusing on Full Stack Development, DSA, and IoT systems.</p>
-                    </div>
                     <div className="relative">
                         <span className="absolute -left-[35px] md:-left-[41px] top-1 h-5 w-5 rounded-full border border-amber-500 bg-black"></span>
                         <h3 className="text-xl font-bold text-amber-300">Web Developer & IoT Innovator</h3>
                         <span className="text-sm text-gray-400">Freelance & Projects</span>
                         <p className="mt-2 text-gray-300">Building responsive websites and smart hardware solutions.</p>
+                    </div>
+                    <div className="relative">
+                        <span className="absolute -left-[35px] md:-left-[41px] top-1 h-5 w-5 rounded-full border border-amber-500 bg-black"></span>
+                        <h3 className="text-xl font-bold text-amber-300">B.Tech in Computer Science</h3>
+                        <span className="text-sm text-gray-400">2022 - Present | Shri Ram Institute Of Technology</span>
+                        <p className="mt-2 text-gray-300">Focusing on Full Stack Development, DSA, and IoT systems.</p>
+                    </div>
+                    <div className="relative">
+                        <span className="absolute -left-[35px] md:-left-[41px] top-1 h-5 w-5 rounded-full border border-amber-500 bg-black"></span>
+                        <h3 className="text-xl font-bold text-amber-300">Higher Secondary Education</h3>
+                        <span className="text-sm text-gray-400">Excellence School, Chhapara, District Seoni (MP)</span>
+                        <p className="mt-2 text-gray-300">Completed schooling with a focus on Science and Mathematics.</p>
                     </div>
                 </div>
             </Section>
