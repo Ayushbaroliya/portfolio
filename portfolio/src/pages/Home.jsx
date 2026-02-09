@@ -18,7 +18,7 @@ export default function Home() {
         const formData = new FormData(e.target);
 
         // Add your Web3Forms Access Key here
-        formData.append("access_key", "93b1fab6-28f5-4f12-aa4e-e5aa9844fa00");
+        formData.append("access_key", process.env.REACT_APP_WEB3_ACCESS_KEY);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
