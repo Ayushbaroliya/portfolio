@@ -76,56 +76,63 @@ export default function Navbar({ profile }) {
 
       {/* Mobile Hamburger Button */}
       <div className="md:hidden z-50 grid place-items-center">
-        <button onClick={() => setIsMenuOpen(true)} className="text-2xl text-white">
-          <FaBars />
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-2xl text-white">
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Dropdown */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            variants={menuVariants}
-            className="fixed inset-0 bg-neutral-950/95 backdrop-blur-xl z-[60] flex flex-col items-center justify-center text-xl"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-full left-0 w-full bg-neutral-950/95 backdrop-blur-xl border-b border-white/10 shadow-2xl flex flex-col items-center py-8 gap-6 md:hidden"
           >
-            {/* Close Button */}
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className="absolute top-6 right-6 text-3xl text-gray-400 hover:text-white transition"
-            >
-              <FaTimes />
-            </button>
-
-            <div className="flex flex-col items-center gap-8">
-              {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
+              <motion.div
+                key={link.name}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 * index }}
+              >
                 <Link
-                  key={link.name}
                   to="/"
                   onClick={() => scrollToSection(link.id)}
-                  className="hover:text-amber-300 transition text-2xl font-medium"
+                  className="hover:text-amber-300 transition text-xl font-medium"
                 >
                   {link.name}
                 </Link>
-              ))}
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 * navLinks.length }}
+            >
               <Link
                 to="/certificates"
                 onClick={() => setIsMenuOpen(false)}
-                className="hover:text-amber-300 transition text-amber-100 text-2xl font-medium"
+                className="hover:text-amber-300 transition text-amber-100 text-xl font-medium"
               >
                 Certificates
               </Link>
-            </div>
+            </motion.div>
 
-            <div className="flex gap-6 mt-12">
-              <a href={profile.github} target="_blank" rel="noreferrer" className="text-3xl hover:text-amber-300 transition"><FaGithub /></a>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-3xl hover:text-amber-300 transition"><FaLinkedin /></a>
-              <a href={profile.leetcode} target="_blank" rel="noreferrer" className="text-3xl hover:text-amber-300 transition"><SiLeetcode /></a>
-              <a href={profile.instagram} target="_blank" rel="noreferrer" className="text-3xl hover:text-amber-300 transition"><FaInstagram /></a>
-              <a href={profile.geeksforgeeks} target="_blank" rel="noreferrer" className="text-3xl hover:text-amber-300 transition"><SiGeeksforgeeks /></a>
-            </div>
+            <motion.div
+              className="flex gap-6 mt-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.1 * (navLinks.length + 1) }}
+            >
+              <a href={profile.github} target="_blank" rel="noreferrer" className="text-2xl hover:text-amber-300 transition"><FaGithub /></a>
+              <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-2xl hover:text-amber-300 transition"><FaLinkedin /></a>
+              <a href={profile.leetcode} target="_blank" rel="noreferrer" className="text-2xl hover:text-amber-300 transition"><SiLeetcode /></a>
+              <a href={profile.instagram} target="_blank" rel="noreferrer" className="text-2xl hover:text-amber-300 transition"><FaInstagram /></a>
+              <a href={profile.geeksforgeeks} target="_blank" rel="noreferrer" className="text-2xl hover:text-amber-300 transition"><SiGeeksforgeeks /></a>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

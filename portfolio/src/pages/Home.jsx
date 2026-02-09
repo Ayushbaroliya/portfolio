@@ -5,28 +5,40 @@ import ProjectCard from "../components/ProjectCard";
 import { profile, skills, projects } from "../data/content";
 import { fadeUp, stagger } from "../utils/animations";
 import { useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser'; // Removed EmailJS
 const resumePdf = new URL('../utils/AyushDeloite.pdf', import.meta.url).href;
 
 export default function Home() {
-    const form = useRef();
     const [status, setStatus] = useState('');
 
-    const sendEmail = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
 
-        // EmailJS Configuration
-        // NOTE: You still need to replace 'YOUR_TEMPLATE_ID' and 'YOUR_PUBLIC_KEY'
-        emailjs.sendForm('service_mr7mvbc', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                setStatus('Message Sent! Thank you.');
-                e.target.reset();
-            }, (error) => {
-                setStatus('Failed to send. Please check console.');
-                console.error(error);
+        const formData = new FormData(e.target);
+
+        // Add your Web3Forms Access Key here
+        formData.append("access_key", "93b1fab6-28f5-4f12-aa4e-e5aa9844fa00");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
             });
 
+            const data = await response.json();
+
+            if (data.success) {
+                setStatus('Message Sent! Thank you.');
+                e.target.reset();
+            } else {
+                setStatus('Failed to send. Please try again.');
+                console.error("Web3Forms Error:", data);
+            }
+        } catch (error) {
+            setStatus('Failed to send. Please check your connection.');
+            console.error("Fetch Error:", error);
+        }
     };
 
     return (
@@ -108,7 +120,7 @@ export default function Home() {
                     Have a project in mind? Send me a message!
                 </p>
 
-                <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto space-y-4 text-left">
+                <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4 text-left">
                     <input type="text" name="user_name" placeholder="Your Name" required className="w-full p-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-amber-500 text-white" />
                     <input type="email" name="user_email" placeholder="Your Email" required className="w-full p-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-amber-500 text-white" />
                     <textarea name="message" rows="4" placeholder="Message" required className="w-full p-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-amber-500 text-white"></textarea>

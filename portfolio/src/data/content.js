@@ -17,7 +17,7 @@ const profileImg = new URL('./img/profile.png', import.meta.url).href;
 export const profile = {
   name: "Ayush Sharma",
   role: "Web Developer | IoT Innovator",
-  bio: "I am a B.Tech Computer Science Engineering student who enjoys building web applications and working on IoT-based projects. I like creating things that are useful in real life, from small web tools to hardware systems using sensors and microcontrollers.I work mainly with HTML, CSS, JavaScript, React, and Tailwind CSS for web development, and Arduino and ESP32 for IoT projects. I focus on writing clean simple code so my projects are easy to use and improve.I learn best by building projects, and my goal is to grow as a developer and create solutions that solve real problems.",
+  bio: "I am a B.Tech Computer Science Engineering student who enjoys building practical, real-world software. I work on web applications and IoT-based projects, creating useful solutions—from small web tools to sensor-based hardware systems.\n\nI mainly work with HTML, CSS, JavaScript, React, and Tailwind CSS, and I am learning backend technologies like Node.js, Express, and databases to build full-stack applications. For IoT projects, I use Arduino and ESP32.\n\nI focus on writing clean and maintainable code and have solved 280+ DSA problems to strengthen my problem-solving skills. I learn best by building projects, and my goal is to create useful and meaningful real-world solutions.",
   email: "ayushbaroliya5@gmail.com",
   github: "https://github.com/Ayushbaroliya",
   linkedin: "https://www.linkedin.com/in/ayushsharma27",
