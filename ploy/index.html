@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Miss Ploy 🌷</title>
+    <style>
+        /* --- Modern CSS Variables for a Tulip Theme --- */
+        :root {
+            --blush-pink: #ffe4e1;
+            --tulip-pink: #ff8fa3;
+            --deep-tulip: #c9184a;
+            --creamy-white: #fffdfb;
+            --text-dark: #3a2a2d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--blush-pink) 0%, var(--creamy-white) 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Keeps the rain contained */
+        }
+
+        /* --- Magic Rain Container --- */
+        #magic-rain-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 50;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            top: -50px;
+            animation: fall linear forwards;
+        }
+
+        /* --- Mobile-Centric Container --- */
+        .card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 40px;
+            padding: 3rem 1.5rem;
+            width: 90%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(201, 24, 74, 0.08);
+            animation: fadeUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* --- Center Picture & Animations --- */
+        .image-container {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 2rem auto;
+            border-radius: 50%;
+            overflow: hidden;
+            padding: 6px;
+            background: linear-gradient(45deg, var(--tulip-pink), var(--blush-pink));
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 4px solid var(--creamy-white);
+        }
+
+        /* --- Decorative Floating Elements --- */
+        .tulip-decor {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: pulse 2.5s infinite;
+        }
+
+        .tulip-1 {
+            top: 15px;
+            left: -5px;
+            animation-delay: 0s;
+        }
+
+        .tulip-2 {
+            bottom: 15px;
+            right: -5px;
+            animation-delay: 1s;
+        }
+
+        /* --- Typography --- */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-tulip);
+            margin-bottom: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            color: #5a4146;
+            margin-bottom: 2.5rem;
+            padding: 0 15px;
+            min-height: 80px;
+            /* Prevents button from jumping when text changes */
+            transition: opacity 0.3s ease;
+        }
+
+        /* --- The Button --- */
+        .flirty-btn {
+            background: var(--tulip-pink);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(255, 143, 163, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .flirty-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: #ff7b93;
+            box-shadow: 0 12px 25px rgba(255, 143, 163, 0.6);
+        }
+
+        .flirty-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* --- Keyframes for Animations --- */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(8deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="magic-rain-container"></div>
+
+    <div class="card">
+        <div class="image-container">
+            <span class="tulip-decor tulip-1">🌸</span>
+            <img src="img/ploy.png" alt="Miss Ploy" class="profile-pic">
+            <span class="tulip-decor tulip-2">✨</span>
+        </div>
+
+        <h1>Meet Miss Ploy</h1>
+        <p id="ploy-description">Meet Miss Ploy, a future lawyer and a cute, chubby, decent, kind-hearted girl. That's
+            why she is called Tulip 🌷.</p>
+
+        <button class="flirty-btn" onclick="playMagic()">Press it for magic ✨</button>
+    </div>
+
+    <script>
+        const englishText = "Meet Miss Ploy, a future lawyer and a cute, chubby, decent, kind-hearted girl. That's why she is called Tulip 🌷.";
+        const thaiText = "พบกับคุณพลอย อนาคตทนายความ และเด็กสาวหน้าตาน่ารัก อวบอิ่ม นิสัยดี มีน้ำใจ นั่นคือเหตุผลที่เธอถูกเรียกว่า ทิวลิป 🌷";
+
+        let isThai = false;
+
+        function playMagic() {
+            const desc = document.getElementById('ploy-description');
+
+            // Fade out, change text, fade back in smoothly
+            desc.style.opacity = 0;
+            setTimeout(() => {
+                isThai = !isThai;
+                desc.innerHTML = isThai ? thaiText : englishText;
+                desc.style.opacity = 1;
+            }, 300);
+
+            // Trigger the rain
+            createRain();
+        }
+
+        function createRain() {
+            const container = document.getElementById('magic-rain-container');
+            container.innerHTML = ''; // Clear existing rain
+
+            const emojis = ['🌷', '💖', '✨', '☔', '🤍'];
+            const particleCount = 40;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+                // Randomize position, size, and fall speed
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+
+                // Keep the animation times random so it looks natural
+                const duration = Math.random() * 2 + 2;
+                particle.style.animationDuration = duration + 's';
+                particle.style.animationDelay = Math.random() * 1.5 + 's';
+
+                container.appendChild(particle);
+
+                // Clean up particles after they finish falling so the browser doesn't lag
+                setTimeout(() => {
+                    particle.remove();
+                }, (duration + 1.5) * 1000);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

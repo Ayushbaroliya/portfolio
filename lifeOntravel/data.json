@@ -1,0 +1,607 @@
+{
+  "_readme": "=== Life On Travel — SITE CONTENT FILE ===  Edit ONLY this file to update any text, image, link or number on the website. No coding knowledge required.",
+
+  "site": {
+    "title": "Life On Travel — Luxury Jungle Safari",
+    "description": "Life On Travel — Luxury Jungle Safari Experiences. Discover untamed wilderness, curated packages, and once-in-a-lifetime wildlife encounters.",
+    "keywords": "jungle safari, wildlife travel, luxury safari, adventure travel, Life On Travel",
+    "logoMark": "✦",
+    "logoText": "Life On Travel",
+    "phone": "+919999999999",
+    "phoneDisplay": "+91 99999 99999",
+    "email": "hello@lifeintravel.com",
+    "whatsappNumber": "919999999999",
+    "whatsappMessage": "Hi, I'd like to enquire about a safari package",
+    "address": "Mumbai, India",
+    "copyrightYear": "2025"
+  },
+
+  "navbar": {
+    "links": [
+      { "label": "Home",          "href": "index.html" },
+      { "label": "Destinations",  "href": "index.html#destinations" },
+      { "label": "Packages",      "href": "index.html#packages" },
+      { "label": "Gallery",       "href": "index.html#gallery" },
+      { "label": "Stories",       "href": "index.html#stories" },
+      { "label": "Blog", "href": "blog.html" },
+      { "label": "About",         "href": "about.html" }
+    ],
+    "ctaLabel": "Enquire",
+    "ctaHref": "index.html#contact"
+  },
+
+  "hero": {
+    "eyebrowText": "Curated Safari Experiences",
+    "headingLine1": "Where the Wild",
+    "headingLine2Em": "Holds Its Breath",
+    "subtext": "Immersive journeys into Earth's last untouched jungles — crafted for the discerning explorer.",
+    "cta": [
+      { "label": "Explore Packages",   "href": "#packages",     "style": "primary" },
+      { "label": "View Destinations",  "href": "#destinations", "style": "ghost" }
+    ],
+    "slides": [
+      {
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=80",
+        "alt": "Jungle safari at dusk"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1920&q=80",
+        "alt": "African savannah"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1504173010664-32509107de11?w=1920&q=80",
+        "alt": "Dense jungle canopy"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1518502500147-36ca3e124043?w=1920&q=80",
+        "alt": "Leopard in the wild"
+      }
+    ]
+  },
+
+  "stats": [
+    { "number": 1200, "suffix": "+",    "label": "Safaris Conducted" },
+    { "number": 48,   "suffix": "",     "label": "Wildlife Destinations" },
+    { "number": 15,   "suffix": " yrs", "label": "Expert Experience" },
+    { "number": 98,   "suffix": "%",    "label": "Guest Satisfaction" }
+  ],
+
+  "about": {
+    "title": "Dedicated to the Wild",
+    "description": "We are a team of naturalists, conservationists, and explorers committed to creating ethical, immersive wildlife experiences.",
+    "heroTitle": "Born in the Wild, Built for Explorers",
+    "heroDesc": "Life On Travel was founded in 2009 by a group of naturalists who believed that the best way to protect India's wilderness is to share it with those who truly care. We craft moments, not just tours.",
+    "stats": [
+      { "number": 1200, "label": "Safaris Led", "suffix": "+" },
+      { "number": 48,   "label": "Destinations", "suffix": "" },
+      { "number": 15,   "label": "Experience", "suffix": " yrs" }
+    ],
+    "values": [
+      {
+        "icon": "🌿",
+        "title": "Conservation First",
+        "text": "A portion of every booking goes directly to habitat restoration and anti-poaching initiatives."
+      },
+      {
+        "icon": "🔭",
+        "title": "Expert-Led Immersion",
+        "text": "Every guide in our network holds a degree in ecology or zoology with extensive field experience."
+      },
+      {
+        "icon": "✨",
+        "title": "Crafted for You",
+        "text": "No two guests are the same. We design every itinerary with your specific rhythms and interests in mind."
+      }
+    ],
+    "timeline": [
+      { "year": "2009", "text": "Launched with a single jeep and an unshakeable belief in ethical wildlife travel." },
+      { "year": "2013", "text": "Expanded to Ranthambore and Kaziranga, welcoming our first international guests." },
+      { "year": "2019", "text": "Recognized as a top sustainable travel company. Fleet grew to 24 vehicles." },
+      { "year": "2025", "text": "Over 1,200 safaris led with a 98% satisfaction rate across 48 destinations." }
+    ],
+    "team": [
+      {
+        "name": "Arjun Rawat",
+        "role": "Founder & Chief Naturalist",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80"
+      },
+      {
+        "name": "Priya Menon",
+        "role": "Conservation Director",
+        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&q=80"
+      },
+      {
+        "name": "Rahul Sharma",
+        "role": "Senior Field Guide",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80"
+      },
+      {
+        "name": "Nandita Das",
+        "role": "Guest Experience Head",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80"
+      }
+    ]
+  },
+
+  "destinations": {
+    "sectionEyebrow": "Explore the Wild",
+    "sectionTitle": "Our Destinations",
+    "sectionDesc": "Hand-picked wilderness corridors across the globe, each offering an unparalleled encounter with nature's grandeur.",
+    "viewAllLabel": "View All Destinations",
+    "viewAllHref": "destinations.html",
+    "items": [
+      {
+        "id": 1,
+        "title": "Jim Corbett",
+        "region": "Uttarakhand, India",
+        "type": "Tiger Reserve",
+        "duration": "3–5 Days",
+        "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=600&q=80",
+        "slug": "jim-corbett"
+      },
+      {
+        "id": 2,
+        "title": "Ranthambore",
+        "region": "Rajasthan, India",
+        "type": "National Park",
+        "duration": "2–4 Days",
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+        "slug": "ranthambore"
+      },
+      {
+        "id": 3,
+        "title": "Kaziranga",
+        "region": "Assam, India",
+        "type": "UNESCO Heritage",
+        "duration": "3–5 Days",
+        "image": "https://images.unsplash.com/photo-1504173010664-32509107de11?w=600&q=80",
+        "slug": "kaziranga"
+      },
+      {
+        "id": 4,
+        "title": "Sundarbans",
+        "region": "West Bengal, India",
+        "type": "Mangrove Delta",
+        "duration": "4–6 Days",
+        "image": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80",
+        "slug": "sundarbans"
+      },
+      {
+        "id": 5,
+        "title": "Bandhavgarh",
+        "region": "Madhya Pradesh, India",
+        "type": "Highest Tiger Density",
+        "duration": "3–5 Days",
+        "image": "https://images.unsplash.com/photo-1581012733671-add3757a3889?w=600&q=80",
+        "slug": "bandhavgarh"
+      },
+      {
+        "id": 6,
+        "title": "Kanha",
+        "region": "Madhya Pradesh, India",
+        "type": "Mowgli's Land",
+        "duration": "4–6 Days",
+        "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=600&q=80",
+        "slug": "kanha"
+      }
+    ]
+  },
+
+  "packages": {
+    "sectionEyebrow": "Tailored for You",
+    "sectionTitle": "Safari Packages",
+    "sectionDesc": "Every journey is unique. Choose from our meticulously curated packages designed for every kind of explorer.",
+    "items": [
+      {
+        "id": 1,
+        "title": "The Corbett Immersion",
+        "type": "Tiger Safari",
+        "description": "A six-day deep dive into the oldest national park in Asia. Encounter Bengal tigers, leopards, and over 600 bird species across diverse terrain.",
+        "duration": "6 Days / 5 Nights",
+        "groupSize": "Up to 8",
+        "difficulty": "Easy",
+        "price": "₹42,000",
+        "priceNote": "/person",
+        "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&q=80",
+        "featured": false,
+        "slug": "corbett-immersion"
+      },
+      {
+        "id": 2,
+        "title": "Ranthambore Royale",
+        "type": "Luxury Safari",
+        "description": "Experience the majestic tigers of Ranthambore in supreme comfort. Private jeeps, luxury camp, expert naturalists guiding every hour of your adventure.",
+        "duration": "5 Days / 4 Nights",
+        "groupSize": "Private (2–4)",
+        "difficulty": "Easy",
+        "price": "₹78,000",
+        "priceNote": "/person",
+        "image": "https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=800&q=80",
+        "featured": true,
+        "slug": "ranthambore-royale"
+      },
+      {
+        "id": 3,
+        "title": "Northeast Wilderness",
+        "type": "Multi-Park Expedition",
+        "description": "From one-horned rhinos in Kaziranga to rare birds in Manas — a cross-park adventure through India's pristine northeastern frontier.",
+        "duration": "8 Days / 7 Nights",
+        "groupSize": "Up to 12",
+        "difficulty": "Moderate",
+        "price": "₹55,000",
+        "priceNote": "/person",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+        "featured": false,
+        "slug": "northeast-wilderness"
+      },
+      {
+        "id": 4,
+        "title": "Central India Circuit",
+        "type": "Multi-Park Adventure",
+        "description": "A 10-day odyssey through Bandhavgarh and Kanha. Witness the legendary tiger lineages and explore the vast sal forests that inspired The Jungle Book.",
+        "duration": "10 Days / 9 Nights",
+        "groupSize": "Up to 6",
+        "difficulty": "Moderate",
+        "price": "₹1,15,000",
+        "priceNote": "/person",
+        "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&q=80",
+        "featured": false,
+        "slug": "central-india-circuit"
+      }
+    ]
+  },
+
+  "pricing": {
+    "sectionEyebrow": "Investment",
+    "sectionTitle": "Choose Your Journey",
+    "sectionDesc": "Transparent pricing with nothing hidden. Every plan includes expert naturalist guides and curated experiences.",
+    "plans": [
+      {
+        "name": "Explorer",
+        "description": "Perfect for solo travelers and small groups looking for guided adventure.",
+        "currency": "₹",
+        "price": "28,000",
+        "period": "per person",
+        "recommended": false,
+        "ctaLabel": "Book Explorer",
+        "features": [
+          { "text": "Shared jeep safari (6-seater)", "included": true },
+          { "text": "3 safari drives included",      "included": true },
+          { "text": "Expert naturalist guide",       "included": true },
+          { "text": "Camp accommodation",            "included": true },
+          { "text": "All meals included",            "included": true },
+          { "text": "Airport transfers",             "included": false },
+          { "text": "Private vehicle",               "included": false }
+        ]
+      },
+      {
+        "name": "Signature",
+        "description": "Our most popular package. Curated for couples and discerning travelers.",
+        "currency": "₹",
+        "price": "55,000",
+        "period": "per person",
+        "recommended": true,
+        "ctaLabel": "Book Signature",
+        "features": [
+          { "text": "Private jeep safari (exclusive)",  "included": true },
+          { "text": "5 safari drives included",        "included": true },
+          { "text": "Senior naturalist guide",         "included": true },
+          { "text": "Luxury tent accommodation",       "included": true },
+          { "text": "All meals + sundowner",           "included": true },
+          { "text": "Airport transfers",               "included": true },
+          { "text": "Wildlife photo sessions",         "included": true }
+        ]
+      },
+      {
+        "name": "Elite",
+        "description": "Ultimate bespoke luxury. Every element personalised, nothing left to chance.",
+        "currency": "₹",
+        "price": "1,20,000",
+        "period": "per person",
+        "recommended": false,
+        "ctaLabel": "Enquire Elite",
+        "features": [
+          { "text": "Full private concierge",         "included": true },
+          { "text": "Unlimited safari drives",        "included": true },
+          { "text": "Chief naturalist + researcher",  "included": true },
+          { "text": "Premium jungle lodge",           "included": true },
+          { "text": "Gourmet dining, all meals",      "included": true },
+          { "text": "Heli transfers available",       "included": true },
+          { "text": "Custom itinerary design",        "included": true }
+        ]
+      }
+    ]
+  },
+
+  "gallery": {
+    "sectionEyebrow": "Through the Lens",
+    "sectionTitle": "The Wild in Frame",
+    "items": [
+      { "id": 1,  "image": "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=600&q=80", "alt": "Tiger at dawn",       "caption": "Bengal Tiger, Jim Corbett" },
+      { "id": 2,  "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&q=80", "alt": "Elephant herd",      "caption": "Elephant Herd, Corbett" },
+      { "id": 3,  "image": "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=600&q=80", "alt": "Leopard on branch",  "caption": "Leopard at rest" },
+      { "id": 4,  "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80", "alt": "African savannah",    "caption": "Savannah at sunset" },
+      { "id": 5,  "image": "https://images.unsplash.com/photo-1504173010664-32509107de11?w=600&q=80", "alt": "Dense jungle",       "caption": "Jungle canopy, Assam" },
+      { "id": 6,  "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80", "alt": "Wildlife at dusk",   "caption": "Golden hour safari" },
+      { "id": 7,  "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80", "alt": "Forest path",         "caption": "Morning game drive" },
+      { "id": 8,  "image": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80", "alt": "River safari",       "caption": "Boat safari, Sundarbans" },
+      { "id": 9,  "image": "https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=600&q=80", "alt": "Bird watching",      "caption": "Dawn birding" },
+      { "id": 10, "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=600&q=80", "alt": "Night sky",          "caption": "Stargazing camp" },
+      { "id": 11, "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80", "alt": "Misty morning",      "caption": "Misty dawn, Corbett" },
+      { "id": 12, "image": "https://images.unsplash.com/photo-1568034897208-da0d3b1e08cd?w=600&q=80", "alt": "Jungle camp",        "caption": "Forest camp retreat" },
+      { "id": 13, "image": "https://images.unsplash.com/photo-1518502500147-36ca3e124043?w=600&q=80", "alt": "Leopard resting",    "caption": "Leopard at ease, Ranthambore" },
+      { "id": 14, "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=600&q=80", "alt": "Rhino in grass",    "caption": "The prehistoric giant, Kaziranga" },
+      { "id": 15, "image": "https://images.unsplash.com/photo-1581012733671-add3757a3889?w=600&q=80", "alt": "Tiger drinking",    "caption": "Morning thirst, Bandhavgarh" },
+      { "id": 16, "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&q=80", "alt": "Kingfisher bird",    "caption": "Vibrant wings, Corbett" }
+    ]
+  },
+
+  "stories": {
+    "sectionEyebrow": "Moments Captured",
+    "sectionTitle": "Web Stories",
+    "items": [
+      {
+        "id": 1,
+        "title": "Dawn of the Tiger",
+        "label": "Jim Corbett",
+        "coverImage": "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=400&q=80",
+        "slides": [
+          {
+            "image": "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=900&q=80",
+            "title": "Dawn of the Tiger",
+            "text": "The forest holds its breath as first light breaks over the Ramganga. Every shadow could hold the secret we seek."
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=900&q=80",
+            "title": "The Misty Hour",
+            "text": "At 5 AM, the jungle comes alive. The air carries the scent of wet earth and the distant call of a spotted deer."
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=900&q=80",
+            "title": "The Encounter",
+            "text": "She emerges from the sal forest, unhurried, magnificent. A Bengal tigress — and she is watching us as closely as we watch her."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Rhino Country",
+        "label": "Kaziranga",
+        "coverImage": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&q=80",
+        "slides": [
+          {
+            "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=900&q=80",
+            "title": "One-Horned Giants",
+            "text": "Kaziranga is home to two-thirds of the world's one-horned rhinoceros population. This ancient world feels untouched by time."
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1504173010664-32509107de11?w=900&q=80",
+            "title": "Flood Plains & Forest",
+            "text": "The Brahmaputra floodplains transform every monsoon, reshaping the landscape that these giants have called home for millennia."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Night in the Delta",
+        "label": "Sundarbans",
+        "coverImage": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=400&q=80",
+        "slides": [
+          {
+            "image": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=900&q=80",
+            "title": "Mangrove Maze",
+            "text": "The Sundarbans is the world's largest mangrove forest, where channels weave like veins through the green delta."
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=80",
+            "title": "The Elusive King",
+            "text": "The swimming tiger of the Sundarbans is unlike any other. An apex predator at home in both water and forest."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Wings Over Corbett",
+        "label": "Bird Safari",
+        "coverImage": "https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=400&q=80",
+        "slides": [
+          {
+            "image": "https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=900&q=80",
+            "title": "Wings Over Corbett",
+            "text": "Over 600 avian species call Jim Corbett home. For birders, it is paradise on earth."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Leopard of Ranthambore",
+        "label": "Big Cat Safari",
+        "coverImage": "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=400&q=80",
+        "slides": [
+          {
+            "image": "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=900&q=80",
+            "title": "The Ghost Cat",
+            "text": "Silent and near-invisible against the rocky terrain, the leopard of Ranthambore embodies the mystery of the wild."
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=900&q=80",
+            "title": "Rocky Kingdom",
+            "text": "The ancient fort of Ranthambore watches over a kingdom of feline royalty."
+          }
+        ]
+      }
+    ]
+  },
+
+  "testimonials": {
+    "sectionEyebrow": "Voices from the Wild",
+    "sectionTitle": "What Travellers Say",
+    "items": [
+      {
+        "id": 1,
+        "text": "Life On Travel redefined what I thought a safari could be. Our naturalist guide had a story for every rustling leaf. The encounter with a tigress and her cubs will remain etched in memory forever.",
+        "name": "Priya Malhotra",
+        "meta": "Mumbai · Jim Corbett, 2024",
+        "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&q=80",
+        "stars": 5
+      },
+      {
+        "id": 2,
+        "text": "From the moment we arrived, every detail was immaculate. The private jeep, the gourmet picnic breakfast deep in the forest, the sunset at the watering hole — nothing felt like a package tour. It felt like it was made just for us.",
+        "name": "Rahul & Sneha Kapoor",
+        "meta": "Delhi · Ranthambore, 2024",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+        "stars": 5
+      },
+      {
+        "id": 3,
+        "text": "As a wildlife photographer, I've been on dozens of safaris. Life On Travel stands apart because they understand light, behavior, and timing. I returned with photographs I could never have gotten elsewhere.",
+        "name": "Arjun Menon",
+        "meta": "Bangalore · Kaziranga, 2023",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
+        "stars": 5
+      },
+      {
+        "id": 4,
+        "text": "The Sundarbans night river cruise alone was worth the entire trip. We drifted silently through the mangroves under a full moon, and our guide spotted a tiger on the bank 40 metres away. Extraordinary.",
+        "name": "Sarah Thompson",
+        "meta": "London · Sundarbans, 2024",
+        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
+        "stars": 5
+      },
+      {
+        "id": 5,
+        "text": "The attention to detail was staggering. Our naturalist didn't just show us tigers; he showed us the termites, the birds, and the trees. It was a holistic education that transformed how I view nature.",
+        "name": "Michael Chen",
+        "meta": "Singapore · Bandhavgarh, 2024",
+        "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80",
+        "stars": 5
+      },
+      {
+        "id": 6,
+        "text": "I was hesitant about a boat safari in the Sundarbans, but it was the highlight of my life. Seeing the mangrove roots at low tide was like being on another planet. The silence is profound.",
+        "name": "Elena Rodriguez",
+        "meta": "Spain · Sundarbans, 2024",
+        "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&q=80",
+        "stars": 5
+      }
+    ]
+  },
+
+  "blog": {
+    "sectionEyebrow": "Blog",
+    "sectionTitle": "From the Wild",
+    "sectionDesc": "Stories, wildlife guides, and travel insights from our naturalists and explorers.",
+    "readAllLabel": "Read the Blog",
+    "readAllHref": "blog.html",
+    "posts": [
+      {
+        "id": 1,
+        "title": "The Art of Reading Tiger Pug Marks",
+        "category": "Field Notes",
+        "excerpt": "Before you see the tiger, the forest tells you where it has been. Understanding animal tracks transforms a safari from a game drive into a conversation with the wild.",
+        "date": "March 15, 2025",
+        "image": "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=800&q=80",
+        "slug": "tiger-pug-marks"
+      },
+      {
+        "id": 2,
+        "title": "Why Kaziranga Floods are a Gift to Wildlife",
+        "category": "Ecology",
+        "excerpt": "Every monsoon, the Brahmaputra reclaims its floodplains. For the one-horned rhinoceros and its neighbours, this seasonal chaos is a renewal as ancient as the species themselves.",
+        "date": "February 28, 2025",
+        "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80",
+        "slug": "kaziranga-floods"
+      },
+      {
+        "id": 3,
+        "title": "The Best Time to Visit India's Tiger Reserves",
+        "category": "Travel Guide",
+        "excerpt": "Timing your safari makes all the difference between a fleeting glimpse and an unforgettable encounter. Our naturalists break down the seasons across seven reserves.",
+        "date": "January 10, 2025",
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+        "slug": "best-time-tiger-safari",
+        "author": "Rajesh Khanna",
+        "readTime": "5 min read",
+        "body": "<h2>Choosing Your Moment</h2><p>India's tiger reserves offer different experiences depending on when you visit. The core season runs from October to June, but within this window, the landscape changes dramatically.</p><h3>The Winter Chill (Nov - Feb)</h3><p>The forest is lush, green, and incredibly beautiful. While tiger sightings require more patience due to the thick foliage, the birdlife is at its peak with migratory species arriving from Siberia.</p><h3>The Summer Sizzle (Mar - June)</h3><p>As water sources dry up, tigers are frequently spotted near watering holes. The heat can be intense, but the reward is often prolonged sightings of big cats cooling off in the pools.</p>"
+      },
+      {
+        "id": 4,
+        "title": "The Ghost of the Mountains: Tracking Leopards",
+        "category": "Field Notes",
+        "excerpt": "Silent, near-invisible, and incredibly agile. Tracking leopards in the rocky terrain of Ranthambore is a masterclass in patience and observation.",
+        "date": "April 05, 2025",
+        "image": "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=800&q=80",
+        "slug": "tracking-leopards",
+        "author": "Sameer Deshmukh",
+        "readTime": "7 min read",
+        "body": "<h2>The Master of Camouflage</h2><p>Unlike the tiger, which often announces its presence through the alarm calls of deer, the leopard is a ghost. It moves with a fluidity that defies the jagged rocks of the Aravallis.</p><p>On a recent morning drive in Zone 4, we spent two hours tracking a series of fresh pug marks. The langurs were silent, the deer were grazing peacefully. It seemed the leopard had vanished.</p><p>But then, our naturalist spotted a flick of a tail. High up on a dhok tree, perfectly blended with the bark, sat a female leopard. She had been watching us the whole time.</p>"
+      },
+      {
+        "id": 5,
+        "title": "10 Essential Birding Tips for Corbett",
+        "category": "Travel Guide",
+        "excerpt": "With over 600 species, Jim Corbett is a birder's paradise. Here is how to make the most of your avian adventure.",
+        "date": "April 20, 2025",
+        "image": "https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=800&q=80",
+        "slug": "birding-tips-corbett",
+        "author": "Sneha Iyer",
+        "readTime": "6 min read",
+        "body": "<h2>Look Beyond the Big Cats</h2><p>While everyone is looking for stripes, the canopy is alive with color. Here are five tips to sharpen your birding skills:</p><ul><li><strong>Master the calls:</strong> Learn the distinct calls of the Great Hornbill and the Collared Falconet.</li><li><strong>Visit the riverbeds:</strong> The Ramganga riverbed is the best place to spot Ibisbills and Fish Owls.</li><li><strong>Patience is key:</strong> Find a fruiting tree and wait. The birds will come to you.</li></ul>"
+      },
+      {
+        "id": 6,
+        "title": "Sustainable Safari: Traveling with a Conscience",
+        "category": "Ecology",
+        "excerpt": "How we travel matters. Discover how you can support conservation and local communities during your next wilderness journey.",
+        "date": "May 02, 2025",
+        "image": "https://images.unsplash.com/photo-1504173010664-32509107de11?w=800&q=80",
+        "slug": "sustainable-safari",
+        "author": "Dr. Ravi Mehta",
+        "readTime": "8 min read",
+        "body": "<h2>Leaving Only Footprints</h2><p>Conservation is not just about protecting animals; it's about protecting the entire ecosystem, including the people who live alongside it.</p><p>At Life On Travel, we prioritize lodges that employ local staff and use solar energy. We also encourage our guests to carry reusable water bottles and avoid all single-use plastics.</p>"
+      }
+    ]
+  },
+
+  "cta": {
+    "eyebrow": "Begin Your Journey",
+    "title": "The Wilderness",
+    "titleEm": "Awaits You",
+    "description": "Let our experts craft your perfect safari. Every detail considered, every moment extraordinary.",
+    "buttons": [
+      { "label": "WhatsApp Us", "type": "whatsapp" },
+      { "label": "Call Now",    "type": "phone" },
+      { "label": "Send Enquiry","type": "email" }
+    ]
+  },
+
+  "footer": {
+    "tagline": "Crafting extraordinary encounters with the wild since 2009. Your journey, our obsession.",
+    "socialLinks": [
+      { "platform": "Instagram", "href": "#", "icon": "instagram" },
+      { "platform": "Facebook",  "href": "#", "icon": "facebook" },
+      { "platform": "YouTube",   "href": "#", "icon": "youtube" }
+    ],
+    "exploreLinks": [
+      { "label": "Destinations",  "href": "#destinations" },
+      { "label": "Packages",      "href": "#packages" },
+      { "label": "Gallery",       "href": "#gallery" },
+      { "label": "Web Stories",   "href": "#stories" },
+      { "label": "Blog", "href": "blog.html" }
+    ],
+    "companyLinks": [
+      { "label": "About Us",      "href": "about.html" },
+      { "label": "Our Team",      "href": "about.html#team" },
+      { "label": "Sustainability","href": "#" },
+      { "label": "Careers",       "href": "#" },
+      { "label": "Press",         "href": "#" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy",  "href": "#" },
+      { "label": "Terms of Service","href": "#" },
+      { "label": "Cookie Policy",   "href": "#" }
+    ]
+  }
+}
+

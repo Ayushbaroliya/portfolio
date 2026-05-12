@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore safari destination details — wildlife, highlights, best season, and how to plan your visit with Life On Travel." />
+  <title>Destination — Life On Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo"><span class="loader-logo__mark">✦</span><span>Life On Travel</span></div>
+    <div class="loader-bar"><div class="loader-bar__fill"></div></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark">✦</span>
+        <span class="navbar__logo-text">Life On Travel</span>
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="index.html#destinations" class="navbar__link active">Destinations</a>
+        <a href="index.html#packages" class="navbar__link">Packages</a>
+        <a href="index.html#gallery" class="navbar__link">Gallery</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="about.html" class="navbar__link">About</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="index.html#contact" class="btn btn--outline btn--sm">Enquire</a>
+        <button class="navbar__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu-dest">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu-dest" role="dialog" aria-label="Mobile navigation" hidden>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#destinations">Destinations</a>
+        <a href="index.html#packages">Packages</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--primary">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="detail-hero" id="destHero">
+    <div class="detail-hero__bg" id="destHeroBg"></div>
+    <div class="detail-hero__overlay"></div>
+    <div class="detail-hero__content">
+      <div class="detail-hero__breadcrumb">
+        <a href="index.html">Home</a> / <a href="index.html#destinations">Destinations</a> / <span id="destName">Destination</span>
+      </div>
+      <span class="detail-hero__eyebrow" id="destType">National Park</span>
+      <h1 class="detail-hero__title" id="destTitle">Jim Corbett</h1>
+      <div class="detail-hero__meta">
+        <div class="detail-hero__meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="destRegion">Uttarakhand, India</span>
+        </div>
+        <div class="detail-hero__meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span id="destDuration">3–5 Days Recommended</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="dest-layout">
+        <!-- Main Content -->
+        <div>
+          <h2 class="section__title" style="font-size:1.9rem;margin-bottom:1rem;text-align:left" id="destAboutTitle">About This Destination</h2>
+          <div id="destDescription" style="font-size:1rem;color:var(--c-text-dim);line-height:1.9">
+            <div class="skeleton"><div class="skeleton__line"></div><div class="skeleton__line"></div><div class="skeleton__line skeleton__line--short"></div></div>
+          </div>
+
+          <!-- Highlights -->
+          <h3 style="font-family:var(--f-serif);font-size:1.5rem;color:var(--c-accent);margin:2.5rem 0 1rem">Destination Highlights</h3>
+          <div class="dest-highlights" id="destHighlights">
+            <!-- Injected via JS -->
+          </div>
+
+          <!-- Gallery mini -->
+          <h3 style="font-family:var(--f-serif);font-size:1.5rem;color:var(--c-accent);margin:2.5rem 0 1rem">Gallery</h3>
+          <div class="dest-gallery-mini" id="destGalleryMini">
+            <!-- Injected via JS -->
+          </div>
+
+          <!-- Wildlife section -->
+          <h3 style="font-family:var(--f-serif);font-size:1.5rem;color:var(--c-accent);margin:2.5rem 0 1rem">Wildlife You May Encounter</h3>
+          <div id="destWildlife" style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:2.5rem"></div>
+
+          <!-- Best time -->
+          <div style="background:rgba(15,47,36,0.2);border:1px solid rgba(201,168,76,0.2);border-radius:var(--r-lg);padding:2rem;margin-top:1rem">
+            <h3 style="font-family:var(--f-serif);font-size:1.3rem;color:var(--c-gold);margin-bottom:0.75rem">🗓 Best Time to Visit</h3>
+            <p id="destBestTime" style="font-size:0.95rem;color:var(--c-text-dim);line-height:1.8">October to June. Peak tiger sightings occur March through May when water sources concentrate wildlife.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="dest-sidebar">
+          <div class="enquiry-card">
+            <div class="enquiry-card__title">Plan Your Visit</div>
+            <div class="enquiry-card__price" id="destPrice">From ₹28,000</div>
+            <div class="enquiry-card__note">per person · package rates vary</div>
+            <a href="index.html#packages" class="btn btn--primary">View Packages</a>
+            <a href="https://wa.me/919999999999" class="btn btn--whatsapp" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Quick Enquiry
+            </a>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Quick Facts</div>
+            <div id="destFacts" style="display:flex;flex-direction:column;gap:0.75rem"></div>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Related Packages</div>
+            <div id="destPackages"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo"><span class="navbar__logo-mark">✦</span><span>Life On Travel</span></div>
+        <p class="footer__tagline">Crafting extraordinary encounters with the wild since 2009.</p>
+      </div>
+    </div>
+    <div class="footer__bottom"><div class="container footer__bottom-inner"><p>© 2025 Life On Travel. All rights reserved.</p></div></div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__pulse"></span>
+  </a>
+
+  <script>
+  (function() {
+    const DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === ''
+                     ? './data.json' 
+                     : 'https://life-on-travel-backend.vercel.app/api/data';
+    const FALLBACK_DESTS = [
+      { id:1, title:'Jim Corbett', region:'Uttarakhand, India', type:'Tiger Reserve', duration:'3–5 Days', img:'https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1920&q=80', slug:'jim-corbett', price:'From ₹28,000', bestTime:'October to June (peak: March–May)', description:'Jim Corbett National Park is India\'s oldest and most celebrated tiger reserve, established in 1936. Spread across the Himalayan foothills of Uttarakhand, Corbett is a symphony of dense sal forests, riverine grasslands, and dramatic ridgelines. It is home to over 200 Bengal tigers, making it one of the highest-density tiger habitats on Earth. Beyond tigers, Corbett hosts leopards, Asian elephants, sloth bears, gharials, and over 600 species of birds. A safari here is unlike any other in India — the landscape shifts constantly, from open riverbeds at dawn to dense forest interiors that echo with the alarm calls of spotted deer.', highlights:[{icon:'🐅',label:'Flagship Wildlife',val:'Bengal Tiger'},{icon:'🐘',label:'Also Present',val:'Asian Elephant'},{icon:'🌿',label:'Habitat',val:'Sal Forest & Riverine'},{icon:'🦅',label:'Bird Species',val:'600+'},{icon:'📍',label:'Park Size',val:'1,318 sq km'},{icon:'🏕️',label:'Stay Options',val:'Luxury Lodges & Tents'}], gallery:['https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=600&q=80','https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=600&q=80','https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80','https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&q=80','https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=600&q=80','https://images.unsplash.com/photo-1568034897208-da0d3b1e08cd?w=600&q=80'], wildlife:['Bengal Tiger','Leopard','Asian Elephant','Sloth Bear','Gharial','King Cobra','Spotted Deer','Sambar Deer','Kingfisher','Hornbill'], facts:[{label:'Established',val:'1936'},{label:'UNESCO Status',val:'No (proposed)'},{label:'Zones',val:'Bijrani, Jhirna, Dhikala'},{label:'Nearest Airport',val:'Pantnagar (50km)'},{label:'Best Drive',val:'Dhikala Zone'}] },
+      { id:2, title:'Ranthambore', region:'Rajasthan, India', type:'National Park', duration:'2–4 Days', img:'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80', slug:'ranthambore', price:'From ₹32,000', bestTime:'October to April (peak: November–February)', description:'Ranthambore National Park in Rajasthan is perhaps the most photogenic tiger reserve in all of Asia. The ancient Ranthambore Fort stands sentinel over a landscape of lakes, ruined pavilions, and sal and dhok forests, where tigers roam with exceptional boldness. The tigers of Ranthambore are legendary for their comfort around vehicles — giving photographers and first-time safari guests an almost guaranteed sighting. The park is also home to leopards, hyenas, jackals, marsh crocodiles, and over 300 bird species. The juxtaposition of medieval architecture and wildlife is utterly unique.', highlights:[{icon:'🐅',label:'Flagship Wildlife',val:'Bengal Tiger'},{icon:'🏰',label:'Unique Feature',val:'Ancient Fort Backdrop'},{icon:'🌊',label:'Water Bodies',val:'Padam, Malik, Raj Bagh'},{icon:'🦅',label:'Bird Species',val:'300+'},{icon:'📍',label:'Park Size',val:'1,334 sq km'},{icon:'🐊',label:'Also Spotted',val:'Marsh Crocodile'}], gallery:['https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80','https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=600&q=80','https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80','https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80','https://images.unsplash.com/photo-1568034897208-da0d3b1e08cd?w=600&q=80','https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=600&q=80'], wildlife:['Bengal Tiger','Leopard','Hyena','Jackal','Nilgai','Wild Boar','Marsh Crocodile','Painted Stork','Crested Serpent Eagle'], facts:[{label:'Established',val:'1980'},{label:'UNESCO Status',val:'Project Tiger Reserve'},{label:'Best Zone',val:'Zone 3 & 4'},{label:'Nearest Airport',val:'Jaipur (160km)'},{label:'Tiger Count',val:'~80 individuals'}] },
+      { id:3, title:'Kaziranga', region:'Assam, India', type:'UNESCO Heritage', duration:'3–5 Days', img:'https://images.unsplash.com/photo-1504173010664-32509107de11?w=1920&q=80', slug:'kaziranga', price:'From ₹24,000', bestTime:'November to April (closed during monsoon)', description:'Kaziranga National Park, a UNESCO World Heritage Site in Assam, is the last great stronghold of the one-horned rhinoceros. It is home to two-thirds of the world\'s population of this prehistoric giant, alongside significant numbers of wild water buffalo, swamp deer, and Bengal tigers. The park occupies the floodplains of the Brahmaputra river, creating a mosaic of tall elephant grass, marshlands, and dense tropical forests. Elephant-back safaris offer an incomparable elevated view of these ancient giants at close range — an experience available nowhere else in the world.', highlights:[{icon:'🦏',label:'Flagship Wildlife',val:'One-Horned Rhino'},{icon:'🐅',label:'Tiger Count',val:'~100 individuals'},{icon:'🐘',label:'Elephant Safaris',val:'Available (unique)'},{icon:'🌿',label:'Habitat',val:'Flood Plains & Elephant Grass'},{icon:'🏆',label:'UNESCO Status',val:'World Heritage Site'},{icon:'📍',label:'Park Size',val:'430 sq km'}], gallery:['https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&q=80','https://images.unsplash.com/photo-1504173010664-32509107de11?w=600&q=80','https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=600&q=80','https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=600&q=80','https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=600&q=80','https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80'], wildlife:['One-Horned Rhinoceros','Bengal Tiger','Wild Water Buffalo','Swamp Deer','Asian Elephant','Hog Deer','Himalayan Griffon','Bar-headed Goose'], facts:[{label:'Established',val:'1974'},{label:'UNESCO',val:'World Heritage 1985'},{label:'Best Zone',val:'Central (Kohora)'},{label:'Nearest Airport',val:'Jorhat (97km)'},{label:'Rhino Count',val:'~2,600+'}] },
+      { id:4, title:'Sundarbans', region:'West Bengal, India', type:'Mangrove Delta', duration:'4–6 Days', img:'https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=1920&q=80', slug:'sundarbans', price:'From ₹35,000', bestTime:'September to March (boat safaris)', description:"The Sundarbans is the world's largest mangrove forest, straddling the delta of the Ganges, Brahmaputra, and Meghna rivers. It is the only place on Earth where tigers live in a tidal mangrove environment — swimming between islands, hunting fish and deer, navigating a labyrinth of channels that shift with every tide. A Sundarbans safari is unlike any other; conducted entirely by boat, you drift silently through green corridors, scanning mudflats for pugmarks and riverbanks for the elusive swimming tiger. It is an experience at once meditative and thrilling.", highlights:[{icon:'🐅',label:'Unique Subspecies',val:'Swimming Tiger'},{icon:'⛵',label:'Safari Type',val:'Boat Safari (only)'},{icon:'🦀',label:'Ecosystem',val:'Mangrove Forest'},{icon:'🏆',label:'UNESCO Status',val:'World Heritage Site'},{icon:'🌊',label:'Tidal Channels',val:'Thousands of km'},{icon:'🐊',label:'Also Present',val:'Saltwater Crocodile'}], gallery:['https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80','https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80','https://images.unsplash.com/photo-1568034897208-da0d3b1e08cd?w=600&q=80','https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=600&q=80','https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80','https://images.unsplash.com/photo-1504173010664-32509107de11?w=600&q=80'], wildlife:['Bengal Tiger (swimming)','Saltwater Crocodile','Irrawaddy Dolphin','Spotted Deer','Olive Ridley Turtle','King Fisher','White-bellied Sea Eagle'], facts:[{label:'Established',val:'1984'},{label:'UNESCO',val:'World Heritage 1987'},{label:'Area',val:'10,000 sq km'},{label:'Nearest Airport',val:'Kolkata (100km)'},{label:'Tiger Count',val:'~100 individuals'}] },
+    ];
+
+    const slug = new URLSearchParams(window.location.search).get('slug');
+
+    // Navbar
+    const burger = document.querySelector('.navbar__burger');
+    const menu = document.getElementById('mobile-menu-dest');
+    burger?.addEventListener('click', () => {
+      const open = burger.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open);
+      menu.hidden = !open;
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.hidden = true; burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = '';
+    }));
+    const nav = document.getElementById('navbar');
+    let lastY = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('is-compact', y > 60);
+      if (y > lastY && y > 100) nav.classList.add('is-hidden'); else nav.classList.remove('is-hidden');
+      lastY = y;
+    }, { passive: true });
+
+    function renderDest(dest) {
+      document.title = `${dest.title} — Life On Travel`;
+      document.getElementById('destName').textContent = dest.title;
+      document.getElementById('destType').textContent = dest.type;
+      document.getElementById('destTitle').textContent = dest.title;
+      document.getElementById('destRegion').textContent = dest.region;
+      document.getElementById('destDuration').textContent = dest.duration + ' Recommended';
+      document.getElementById('destHeroBg').style.backgroundImage = `url('${dest.img || dest.image || ''}')`;
+      document.getElementById('destAboutTitle').textContent = `About ${dest.title}`;
+      document.getElementById('destDescription').innerHTML = `<p>${dest.description || dest.desc || ''}</p>`;
+      document.getElementById('destBestTime').textContent = dest.bestTime || '';
+      document.getElementById('destPrice').textContent = dest.price || 'From ₹28,000';
+
+      // Highlights
+      const highlights = dest.highlights || [];
+      document.getElementById('destHighlights').innerHTML = highlights.map(h => `
+        <div class="highlight-item">
+          <span class="highlight-icon">${h.icon}</span>
+          <div><div class="highlight-label">${h.label}</div><div class="highlight-val">${h.val}</div></div>
+        </div>
+      `).join('');
+
+      // Gallery
+      const gallery = dest.gallery || [];
+      document.getElementById('destGalleryMini').innerHTML = gallery.slice(0, 6).map((src, i) => `
+        <img src="${src}" alt="${dest.title} ${i+1}" loading="lazy" />
+      `).join('');
+
+      // Wildlife tags
+      const wildlife = dest.wildlife || [];
+      document.getElementById('destWildlife').innerHTML = wildlife.map(w => `
+        <span style="font-size:0.8rem;padding:0.3rem 1rem;border:1px solid var(--c-border);border-radius:50px;color:var(--c-text-dim)">${w}</span>
+      `).join('');
+
+      // Facts
+      const facts = dest.facts || [];
+      document.getElementById('destFacts').innerHTML = facts.map(f => `
+        <div style="display:flex;justify-content:space-between;font-size:0.875rem;padding:0.5rem 0;border-bottom:1px solid var(--c-border)">
+          <span style="color:var(--c-text-dim)">${f.label}</span>
+          <span style="color:var(--c-accent);font-weight:500">${f.val}</span>
+        </div>
+      `).join('');
+
+      // Related packages link
+      document.getElementById('destPackages').innerHTML = `
+        <a href="index.html#packages" class="btn btn--outline" style="width:100%;justify-content:center">View All Packages</a>
+      `;
+    }
+
+    async function load() {
+      let dests = FALLBACK_DESTS;
+      const fetchFrom = async (url) => {
+        const r = await fetch(url + (url.includes('?') ? '&' : '?') + 'v=' + Date.now());
+        if (!r.ok) throw new Error('Fetch failed');
+        return await r.json();
+      };
+      try {
+        const data = await fetchFrom(DATA_URL);
+        const raw = data?.destinations?.items || data?.destinations || [];
+        if (Array.isArray(raw) && raw.length) dests = raw.map(d => ({ ...d, img: d.image || d.img || '' }));
+      } catch (e) {
+        console.warn('Primary fetch failed, trying alternate:', e.message);
+        try {
+          const altUrl = DATA_URL.startsWith('./') ? 'https://life-on-travel-backend.vercel.app/api/data' : './data.json';
+          const data = await fetchFrom(altUrl);
+          const raw = data?.destinations?.items || data?.destinations || [];
+          if (Array.isArray(raw) && raw.length) dests = raw.map(d => ({ ...d, img: d.image || d.img || '' }));
+        } catch (e2) {
+          console.error('Could not load data from any source, using hardcoded fallback');
+        }
+      }
+      let dest = dests.find(d => d.slug === slug);
+      if (!dest) dest = dests[0];
+      if (dest) renderDest(dest);
+      setTimeout(() => { document.getElementById('pageLoader')?.classList.add('is-hidden'); }, 600);
+    }
+    load();
+  })();
+  </script>
+</body>
+</html>
+

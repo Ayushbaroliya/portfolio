@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read our wildlife safari blog posts — in-depth field notes, ecology stories, and travel guides from Life On Travel naturalists." />
+  <meta property="og:title" content="Blog Post — Life On Travel" />
+  <meta property="og:description" content="In-depth field notes and ecology stories from Life On Travel naturalists." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=1200&q=80" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Blog Post — Life On Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo"><span class="loader-logo__mark">✦</span><span>Life On Travel</span></div>
+    <div class="loader-bar"><div class="loader-bar__fill"></div></div>
+  </div>
+
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner container">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark">✦</span>
+        <span class="navbar__logo-text">Life On Travel</span>
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="index.html#destinations" class="navbar__link">Destinations</a>
+        <a href="index.html#packages" class="navbar__link">Packages</a>
+        <a href="index.html#gallery" class="navbar__link">Gallery</a>
+        <a href="blog.html" class="navbar__link active">Blog</a>
+        <a href="about.html" class="navbar__link">About</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="index.html#contact" class="btn btn--outline btn--sm">Enquire</a>
+        <button class="navbar__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu-post">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu-post" role="dialog" aria-label="Mobile navigation" hidden>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#destinations">Destinations</a>
+        <a href="index.html#packages">Packages</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--primary">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Post Hero -->
+  <div class="detail-hero" id="postHero">
+    <div class="detail-hero__bg" id="postHeroBg" style="background-image:url('https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=1920&q=80')"></div>
+    <div class="detail-hero__overlay"></div>
+    <div class="detail-hero__content">
+      <div class="detail-hero__breadcrumb">
+        <a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span id="postCategory">Field Notes</span>
+      </div>
+      <span class="detail-hero__eyebrow" id="postEyebrow">Field Notes</span>
+      <h1 class="detail-hero__title" id="postTitle">The Art of Reading Tiger Pug Marks</h1>
+      <div class="detail-hero__meta">
+        <div class="detail-hero__meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span id="postDate">March 15, 2025</span>
+        </div>
+        <div class="detail-hero__meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span id="postAuthorMeta">By Arjun Rawat</span>
+        </div>
+        <div class="detail-hero__meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span id="postReadTime">6 min read</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="post-layout">
+        <!-- Article Body -->
+        <article>
+          <div class="post-body" id="postBody">
+            <!-- Injected via JS -->
+            <div class="skeleton"><div class="skeleton__line"></div><div class="skeleton__line"></div><div class="skeleton__line skeleton__line--short"></div></div>
+          </div>
+          <div class="post-tags" id="postTags"></div>
+          <div class="post-author-card" id="postAuthorCard">
+            <div class="post-author-icon" style="width:72px;height:72px;border-radius:50%;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.8rem;color:var(--c-gold)">✦</div>
+            <div>
+              <div class="post-author-name" id="postAuthorName">Life On Travel</div>
+              <p class="post-author-bio" id="postAuthorBio">Expert wildlife naturalists and storytellers at Life On Travel. Every article is written from firsthand experience in the field.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Recent Posts</div>
+            <div id="sidebarPosts">
+              <div class="skeleton"><div class="skeleton__line"></div><div class="skeleton__line skeleton__line--short"></div></div>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Plan Your Safari</div>
+            <p style="font-size:0.875rem;color:var(--c-text-dim);margin-bottom:1.25rem;line-height:1.7">Ready to experience the wild firsthand? Our naturalists craft the perfect journey for you.</p>
+            <a href="index.html#packages" class="btn btn--primary" style="width:100%;justify-content:center;margin-bottom:0.75rem">View Packages</a>
+            <a href="https://wa.me/919999999999" class="btn btn--whatsapp" style="width:100%;justify-content:center" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__title">Categories</div>
+            <div style="display:flex;flex-direction:column;gap:0.5rem" id="sidebarCats"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo"><span class="navbar__logo-mark">✦</span><span>Life On Travel</span></div>
+        <p class="footer__tagline">Crafting extraordinary encounters with the wild since 2009.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">Explore</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="index.html#packages">Packages</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom"><div class="container footer__bottom-inner"><p>© 2025 Life On Travel. All rights reserved.</p></div></div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__pulse"></span>
+  </a>
+
+  <script>
+  (function() {
+    const DATA_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === ''
+                     ? './data.json' 
+                     : 'https://life-on-travel-backend.vercel.app/api/data';
+    const slug = new URLSearchParams(window.location.search).get('slug');
+
+    // Navbar
+    const burger = document.querySelector('.navbar__burger');
+    const menu = document.getElementById('mobile-menu-post');
+    burger?.addEventListener('click', () => {
+      const open = burger.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open);
+      menu.hidden = !open;
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.hidden = true; burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = '';
+    }));
+    const nav = document.getElementById('navbar');
+    let lastY = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('is-compact', y > 60);
+      if (y > lastY && y > 100) nav.classList.add('is-hidden'); else nav.classList.remove('is-hidden');
+      lastY = y;
+    }, { passive: true });
+    
+    function stripHTML(html) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+    function renderPost(post, allPosts) {
+      // SEO & Meta
+      const title = `${post.title} — Life On Travel`;
+      const desc = post.excerpt || stripHTML(post.body || '').substring(0, 160);
+      const img = post.img || post.image || '';
+
+      document.title = title;
+      document.querySelector('meta[name="description"]').setAttribute('content', desc);
+      document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', desc);
+      document.querySelector('meta[property="og:image"]')?.setAttribute('content', img);
+
+      // Hero
+      document.getElementById('postHeroBg').style.backgroundImage = `url('${img}')`;
+      document.getElementById('postCategory').textContent = post.category || '';
+      document.getElementById('postEyebrow').textContent = post.category || '';
+      document.getElementById('postTitle').textContent = post.title;
+      document.getElementById('postDate').textContent = post.date || '';
+      document.getElementById('postAuthorMeta').textContent = post.author ? `By ${post.author}` : 'By Life On Travel Team';
+      document.getElementById('postReadTime').textContent = post.readTime || '5 min read';
+
+      // Body
+      const body = document.getElementById('postBody');
+      if (post.body) {
+        body.innerHTML = post.body;
+      } else {
+        body.innerHTML = `<p style="font-size:1.1rem;font-family:var(--f-serif);font-style:italic;color:var(--c-accent);margin-bottom:2rem">${post.excerpt || ''}</p><p>${post.description || 'Full article content coming soon.'}</p>`;
+      }
+
+      // Author card
+      if (post.author) {
+        document.getElementById('postAuthorName').textContent = post.author;
+      }
+
+      // Tags
+      const tags = document.getElementById('postTags');
+      if (post.tags && post.tags.length) {
+        tags.innerHTML = post.tags.map(t => `<span class="post-tag">${t}</span>`).join('');
+      }
+
+      // Sidebar posts (other posts)
+      const others = allPosts.filter(p => p.slug !== post.slug).slice(0, 4);
+      document.getElementById('sidebarPosts').innerHTML = others.length ? others.map(p => `
+        <a href="blog-post.html?slug=${p.slug}" class="sidebar-post">
+          <img src="${p.img || p.image || ''}" alt="${p.title}" class="sidebar-post__img" loading="lazy" />
+          <div>
+            <div class="sidebar-post__title">${p.title}</div>
+            <div class="sidebar-post__date">${p.date || ''}</div>
+          </div>
+        </a>
+      `).join('') : '<p style="color:var(--c-text-dim);font-size:0.85rem">No other posts yet.</p>';
+
+      // Categories
+      const cats = [...new Set(allPosts.map(p => p.category).filter(Boolean))];
+      document.getElementById('sidebarCats').innerHTML = cats.map(c => `
+        <a href="blog.html" style="font-size:0.85rem;color:var(--c-text-dim);padding:0.4rem 0;border-bottom:1px solid var(--c-border);display:flex;justify-content:space-between;transition:color var(--dur-fast);" onmouseover="this.style.color='var(--c-gold)'" onmouseout="this.style.color='var(--c-text-dim)'">
+          ${c} <span style="color:var(--c-gold)">${allPosts.filter(p => p.category === c).length}</span>
+        </a>
+      `).join('');
+
+      // Update footer social/contact from site data
+    }
+
+    function showError() {
+      document.getElementById('postBody').innerHTML = `
+        <div style="text-align:center;padding:3rem 0">
+          <p style="font-size:2rem;margin-bottom:1rem">📝</p>
+          <h2 style="font-family:var(--f-serif);color:var(--c-accent);margin-bottom:0.5rem">Post Not Found</h2>
+          <p style="color:var(--c-text-dim)">This blog post doesn't exist yet or has been removed.</p>
+          <a href="blog.html" class="btn btn--primary" style="margin-top:1.5rem">← Back to Blog</a>
+        </div>`;
+      document.getElementById('postTitle').textContent = 'Post Not Found';
+    }
+
+    async function load() {
+      let data;
+      const fetchFrom = async (url) => {
+        const r = await fetch(url + (url.includes('?') ? '&' : '?') + 'v=' + Date.now());
+        if (!r.ok) throw new Error('Fetch failed');
+        return await r.json();
+      };
+      try {
+        data = await fetchFrom(DATA_URL);
+      } catch (e) {
+        console.warn('Primary fetch failed, trying alternate:', e.message);
+        try {
+          const altUrl = DATA_URL.startsWith('./') ? 'https://life-on-travel-backend.vercel.app/api/data' : './data.json';
+          data = await fetchFrom(altUrl);
+        } catch (e2) {
+          console.error('Could not load data');
+          showError(); return;
+        }
+      }
+      if (data) {
+        const blogData = data?.blog || data?.posts;
+        const raw = Array.isArray(blogData) ? blogData : (blogData?.posts || blogData?.items || []);
+        const fallbackImg = 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800';
+        const allPosts = raw.map(p => ({
+          ...p,
+          img: p.image || p.img || p.url || fallbackImg,
+          slug: p.slug || (p.title ? p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : 'post-' + Math.random().toString(36).slice(2, 8))
+        }));
+        if (allPosts.length === 0) { showError(); return; }
+        let post = slug ? allPosts.find(p => p.slug === slug) : allPosts[0];
+        if (!post) { showError(); return; }
+        renderPost(post, allPosts);
+      }
+    }
+    load();
+  })();
+  </script>
+</body>
+</html>
+
